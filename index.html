@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>vinascv</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+      }
+      #card {
+        position: relative;
+        width: 744px;
+        height: 528px;
+        background-color: rgb(126, 186, 243);
+        position: relative;
+        border-radius: 64px;
+      }
+      #intro {
+        width: 238px;
+        height: 284px;
+        background-color: rgb(101, 171, 175);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        padding-left: 24px;
+      }
+      #center {
+        width: 320px;
+        height: 528px;
+        background-color: white;
+        position: absolute;
+        left: 238px;
+        color: black;
+        padding-left: 24px;
+      }
+      h2 {
+        color: rgb(17, 118, 126);
+      }
+      #right {
+        width: 186px;
+        height: 528px;
+        position: absolute;
+        right: 0;
+        padding-left: 20px;
+      }
+      .skill {
+        width: 138px;
+        height: 32px;
+        position: relative;
+        margin-top: 20px;
+      }
+      .gray-bar {
+        width: 138px;
+        height: 12px;
+        background-color: rgb(248, 245, 248);
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .green-bar {
+        width: 69px;
+        height: 12px;
+        background-color: lightcoral;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+
+      .right-text {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .green-bar-2 {
+        width: 24px;
+        height: 12px;
+        background-color: lightcoral;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+        width: 24px;
+        left: 24px;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#img-2").hide();
+
+        $("#img-1").click(function () {
+          $("#img-1").fadeOut(1000);
+          $("#img-2").fadeIn(1000);
+        });
+        $("#img-2").click(function () {
+          $("#img-2").fadeOut();
+          $("#img-1").fadeIn();
+        });
+      });
+    </script>
+    <body>
+      <div id="card">
+        <img src="talentImage.aspx.jpg" id="img-1" width="238" height="244" />
+        <img src="b194638708.jpg" id="img-2" width="238" height="244" />
+
+        <div id="intro">
+          <h1>Vina.k</h1>
+          <p>Marketing</p>
+          <p>Pm</p>
+          <p>Taiwan</p>
+        </div>
+        <div id="center">
+          <h2>自我介紹</h2>
+          <p>WELCOME TO MY CV</p>
+          <h2>工作經歷</h2>
+          <ul></ul>
+          <li>FXTW</li>
+          <li>BOTTEGA VENETA</li>
+          <h2>專業證照</h2>
+          <ul></ul>
+          <li>PMP</li>
+        </div>
+        <div id="right">
+          <h2>個性</h2>
+          <div class="skill">
+            positive
+            <div class="right-text">negative</div>
+
+            <div class="gray-bar"></div>
+            <div class="green-bar-2" style="width: 30%;"></div>
+          </div>
+          <div class="skill">
+            理性
+            <div class="right-text">感性</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar-2" style="left: 50%;"></div>
+          </div>
+          <h2>技能</h2>
+          <div class="skill">
+            HTML
+            <div class="gray-bar"></div>
+            <div class="green-bar" style="width: 30%;"></div>
+          </div>
+          <div class="skill">
+            PPT
+            <div class="gray-bar"></div>
+            <div class="green-bar" style="width: 80%;"></div>
+          </div>
+          <div class="skill">
+            Marketing
+            <div class="gray-bar"></div>
+            <div class="green-bar" style="width: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
